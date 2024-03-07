@@ -33,16 +33,19 @@ div[class="Card"] {
   margin-top: 12%;
 
   font-family: Bahnschrift;
-  font-size: 25px;
   font-weight: 400;
 
   color: #0000;
 
-  transition: 2s ease-in-out;
+  transition: 2s ease-in;
 }
 
 p[class="Card_1-Text_1"] {
   font-size: 35px;
+}
+
+p[class="Card_1-Text_2"] {
+  font-size: 25px;
 }
 
 p[class="Card_1-Text_3"] {
@@ -63,5 +66,66 @@ div[class="Card"]:hover {
   color: #000;
 
   transform: rotate(0.625deg);
-  transition: 2s ease-in-out;
+  transition: 2s ease-out;
+}
+
+@media screen and (max-width: 750px) {
+  div[class="Card"] {
+    width: 50%;
+    height: 30vh;
+
+    padding: 0.5%;
+
+    background: url("Image 1.jpg") repeat center;
+
+    border: solid #000 2.5px;
+    border-radius: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 12%;
+
+    font-family: Bahnschrift;
+    font-weight: 400;
+
+    color: #0000;
+
+    transition: 2s ease-in;
+  }
+
+  div[class="Card"]:hover {
+    width: 65%;
+    height: 40vh;
+
+    background: url("Image 2.jpg") repeat center;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+
+    transform: rotate(0.625deg);
+    transition: 2s ease-out;
+  }
+
+  p[class="Card_1-Text_1"] {
+    font-size: 17.5px;
+  }
+
+  p[class="Card_1-Text_2"] {
+    font-size: 12.5px;
+  }
+
+  p[class="Card_1-Text_3"] {
+    font-size: 10px;
+  }
 }
