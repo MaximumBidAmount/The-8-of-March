@@ -1,0 +1,67 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  background: url("Image BG.jpg") repeat center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class="Card"] {
+  width: 35%;
+  height: 40vh;
+
+  padding: 1%;
+
+  background: url("Image 1.jpg") repeat center;
+
+  border: solid #000 5px;
+  border-radius: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 12%;
+
+  font-family: Bahnschrift;
+  font-size: 25px;
+  font-weight: 400;
+
+  color: #0000;
+
+  transition: 2s ease-in-out;
+}
+
+p[class="Card_1-Text_1"] {
+  font-size: 35px;
+}
+
+p[class="Card_1-Text_3"] {
+  font-size: 20px;
+}
+
+div[class="Card"]:hover {
+  width: 40%;
+  height: 45vh;
+
+  background: url("Image 2.jpg") repeat center;
+
+  border-radius: 25px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #000;
+
+  transform: rotate(0.625deg);
+  transition: 2s ease-in-out;
+}
